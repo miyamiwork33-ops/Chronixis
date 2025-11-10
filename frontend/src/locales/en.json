@@ -1,0 +1,187 @@
+{
+  "login": {
+    "title": "Login",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "emailUser": "example",
+    "emailDomain": "example.com",
+    "passwordPlaceholder": "password",
+    "emailRequired": "Please enter your email address",
+    "emailInvalid": "Please enter a valid email address",
+    "passwordRequired": "Please enter your password",
+    "passwordTooShort": "Please enter a password of at least 6 characters",
+    "myToast": {
+      "authError": "Authentication error",
+      "authErrorMsg": "Incorrect email address or password",
+      "commError": "Communication error",
+      "commErrorMsg": "Could not connect to the server",
+      "errorNotif": "Error notification",
+      "errorNotifMsg": "Failed to get user information"
+    }
+  },
+  "loginParts": {
+    "loginButton": {
+      "sending": "Sending...",
+      "login": "Login"
+    }
+  },
+  "logoutParts": {
+    "logoutButton": {
+      "logout": "Logout"
+    }
+  },
+  "menu": {
+    "label": {
+      "dashboard": "Dashboard",
+      "calendar": "Calendar",
+      "calendarItems": {
+        "registration": "Registration",
+        "detail": "Detail"
+      },
+      "dailySchedule": "Daily Schedule",
+      "scheduleItems": {
+        "scheduleManage": "Schedule Manage",
+        "actCategoryMaster": "ActCategory Master"
+      },
+      "habits": "Habits",
+      "habitItems": {
+        "setGoals": "Goal Set",
+        "tracking": "Log Manage"
+      },
+      "settings": "Setting",
+      "logout": "Logout"
+    }
+  },
+  "scheduleManage": {
+    "addButton": "add",
+    "registrationButton": "register",
+    "updateButton": "update",
+    "myToast": {
+      "inputError": "Input error notification",
+      "inputErrorMsg": "Please check your input.",
+      "summaryFailure": "Failure notification",
+      "dataGetFailureMsg": "Failed to get registration data."
+    },
+    "validateForm": {
+      "startCheck": "Please enter the start time.",
+      "endCheck": "Please enter the end time.",
+      "compareCheck": "The end time must be greater than the start time.",
+      "actCheck": "Please select the activity.",
+      "duplicationCheck": "There are overlapping time slots registered."
+    },
+    "datePicker": {
+      "start": "start",
+      "end": "end",
+      "endTimeDescription": "Please set the end time up to 23:59 (24:00 is not supported)"
+    },
+    "unCategorized": "Uncategorized",
+    "undefined": "Undefined"
+  },
+  "actCategoryMaster": {
+    "addButton": "add",
+    "registrationButton": "register",
+    "tableHeader": {
+      "color": "color",
+      "activity": "activity",
+      "deletion": "deletion"
+    },
+    "activityExample": "example: study / sleep / exercise",
+    "dialog": {
+      "title": "confirming",
+      "button": {
+        "close": "close",
+        "reload": "reload"
+      },
+      "syncFailureMessage": "Data synchronization with the server failed.",
+      "updateConfirmationMessage": "Would you like to re-acquire and update to the latest version?"
+    },
+    "myToast": {
+      "summarySuccess": "Success notification",
+      "successMsg": "Data has been successfully registered.",
+      "summaryFailure": "Failure notification",
+      "dataGetFailureMsg": "Failed to get category data.",
+      "failureMsg": "Failed to register data. Please try again.",
+      "noColorDataMsg": "Color data not found.",
+      "inputError": "Input error notification",
+      "requiredErrorMsg": "Please check the required fields."
+    },
+    "validateForm": {
+      "colorDuplicateCheck": "Colors cannot be duplicated.",
+      "actRequiredCheck": "Action content is required.",
+      "colorRequiredCheck": "Color selection is required."
+    },
+    "reloadSpinner": "Re-fetching data..."
+  },
+  "setGoals": {
+    "addButton": "add",
+    "registrationButton": "register",
+    "headers": {
+      "linkToAction": "Link to an action",
+      "actionColorTitle": "Action/Color and Title",
+      "durationMinutes": "Duration Minutes",
+      "details": "Details",
+      "delete": "Delete"
+    },
+    "titlePH": "Enter Title",
+    "durationMinutesPH": "Enter Duration Minutes",
+    "detailPH": "Enter Detail",
+    "myToast": {
+      "summarySuccess": "Success notification",
+      "successMsg": "Data has been successfully registered.",
+      "inputError": "Input error notification",
+      "inputErrorMsg": "Please check your input.",
+      "summaryFailure": "Failure notification",
+      "dataGetFailureMsg": "Failed to get registration data.",
+      "failureMsg": "Failed to register data. Please try again.",
+      "noColorDataMsg": "Color data not found.",
+      "requiredErrorMsg": "Please check the required fields."
+    },
+    "validateForm": {
+      "colorDuplicateCheck": "Colors cannot be duplicated.",
+      "titleRequiredCheck": "Please enter a title.",
+      "actRequiredCheck": "Please select an action.",
+      "actDuplicateCheck": "Action details cannot be duplicated."
+    }
+  },
+  "tracking": {
+    "challengeHabit": "Habit of challenging :",
+    "selectionHabitPH": "Choose a habit.",
+    "detail": "Details : ",
+    "timer": "Timer",
+    "countDown": "Count Down",
+    "countUp": "Count Up",
+    "timeMinutes": "Time (minutes)",
+    "log": "Record",
+    "reset": "Reset",
+    "pause": "Pause",
+    "start": "Start",
+    "logList": {
+      "title": "Log List",
+      "headers": {
+        "date": "Date",
+        "isAchieved": "Goal achievement",
+        "executionTime": "Execution Time (min:sec)"
+      }
+    },
+    "dialog": {
+      "header": "You haven't achieved your target time.",
+      "message": "You can't hit your target time, but you want to record it?",
+      "cancelButton": "Cancel",
+      "registerButton": "Registration"
+    },
+    "myToast": {
+      "summarySuccess": "Success notification",
+      "successMsg": "Data has been successfully registered.",
+      "inputError": "Input error notification",
+      "inputErrorMsg": "Please check your input.",
+      "summaryFailure": "Failure notification",
+      "dataGetFailureMsg": "Failed to get registration data.",
+      "failureMsg": "Failed to register data. Please try again.",
+      "requiredErrorMsg": "Please check the required fields."
+    }
+  },
+  "mySpinnerMsg": {
+    "loading": "Loading now...",
+    "registering": "Registering data..."
+  }
+}

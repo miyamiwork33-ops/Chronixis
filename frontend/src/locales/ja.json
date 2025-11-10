@@ -1,0 +1,187 @@
+{
+  "login": {
+    "title": "ログイン",
+    "emailLabel": "メールアドレス",
+    "passwordLabel": "パスワード",
+    "emailUser": "example",
+    "emailDomain": "example.com",
+    "passwordPlaceholder": "パスワード",
+    "emailRequired": "メールアドレスを入力してください",
+    "emailInvalid": "正しいメールアドレスを入力してください",
+    "passwordRequired": "パスワードを入力してください",
+    "passwordTooShort": "パスワードは6文字以上で入力してください",
+    "myToast": {
+      "authError": "認証エラー",
+      "authErrorMsg": "メールアドレスまたはパスワードが間違っています",
+      "commError": "通信エラー",
+      "commErrorMsg": "サーバーに接続できませんでした",
+      "errorNotif": "エラーメッセージ",
+      "errorNotifMsg": "ユーザー情報の取得に失敗しました"
+    }
+  },
+  "loginParts": {
+    "loginButton": {
+      "sending": "送信中...",
+      "login": "ログイン"
+    }
+  },
+  "logoutParts": {
+    "logoutButton": {
+      "logout": "ログアウト"
+    }
+  },
+  "menu": {
+    "label": {
+      "dashboard": "ダッシュボード",
+      "calendar": "カレンダー",
+      "calendarItems": {
+        "registration": "登録",
+        "detail": "詳細"
+      },
+      "dailySchedule": "スケジュール管理",
+      "scheduleItems": {
+        "scheduleManage": "一日の予定管理",
+        "actCategoryMaster": "行動カテゴリマスタ管理"
+      },
+      "habits": "習慣化",
+      "habitItems": {
+        "setGoals": "目標を決める",
+        "tracking": "記録の管理"
+      },
+      "settings": "設定",
+      "logout": "ログアウト"
+    }
+  },
+  "scheduleManage": {
+    "addButton": "追加",
+    "registrationButton": "登録",
+    "updateButton": "更新",
+    "myToast": {
+      "inputError": "入力エラー",
+      "inputErrorMsg": "入力内容を確認してください。",
+      "summaryFailure": "エラー通知",
+      "dataGetFailureMsg": "登録データの取得に失敗しました"
+    },
+    "validateForm": {
+      "startCheck": "開始時間を入力してください",
+      "endCheck": "終了時間を入力してください",
+      "compareCheck": "終了時間は開始時間より大きい値にしてください",
+      "actCheck": "行動内容を選択してください",
+      "duplicationCheck": "重複する時間帯の登録があります"
+    },
+    "datePicker": {
+      "start": "開始",
+      "end": "終了",
+      "endTimeDescription": "終了時刻は23:59までを設定してください（24:00は非対応です）"
+    },
+    "unCategorized": "未分類",
+    "undefined": "未定義"
+  },
+  "actCategoryMaster": {
+    "addButton": "追加",
+    "registrationButton": "登録",
+    "tableHeader": {
+      "color": "色",
+      "activity": "行動内容",
+      "deletion": "削除"
+    },
+    "activityExample": "例: 勉強 / 睡眠 / 運動",
+    "dialog": {
+      "title": "確認",
+      "button": {
+        "close": "閉じる",
+        "reload": "リロード"
+      },
+      "syncFailureMessage": "サーバーとのデータ同期に失敗しました。",
+      "updateConfirmationMessage": "再取得して最新の状態に更新しますか？"
+    },
+    "myToast": {
+      "summarySuccess": "成功通知",
+      "successMsg": "データの登録に成功しました",
+      "summaryFailure": "エラー通知",
+      "dataGetFailureMsg": "カテゴリデータの取得に失敗しました。",
+      "failureMsg": "データの登録に失敗しました。もう一度お試しください。",
+      "noColorDataMsg": "色データが見つかりません。",
+      "inputError": "入力エラー",
+      "requiredErrorMsg": "必須項目を確認してください。"
+    },
+    "validateForm": {
+      "colorDuplicateCheck": "色は重複できません",
+      "actRequiredCheck": "行動内容は必須です",
+      "colorRequiredCheck": "色の選択は必須です"
+    },
+    "reloadSpinner": "データを再取得しています..."
+  },
+  "setGoals": {
+    "addButton": "追加",
+    "registrationButton": "登録",
+    "headers": {
+      "linkToAction": "行動との紐づけ",
+      "actionColorTitle": "行動/色とタイトル",
+      "durationMinutes": "所要時間",
+      "details": "詳細内容",
+      "delete": "削除"
+    },
+    "titlePH": "タイトルを入力",
+    "durationMinutesPH": "所要時間(分)",
+    "detailPH": "詳細内容を入力",
+    "myToast": {
+      "summarySuccess": "成功通知",
+      "successMsg": "データの登録に成功しました",
+      "inputError": "入力エラー",
+      "inputErrorMsg": "入力内容を確認してください。",
+      "summaryFailure": "エラー通知",
+      "dataGetFailureMsg": "登録データの取得に失敗しました",
+      "failureMsg": "データの登録に失敗しました。もう一度お試しください。",
+      "noColorDataMsg": "色データが見つかりません。",
+      "requiredErrorMsg": "必須項目を確認してください。"
+    },
+    "validateForm": {
+      "colorDuplicateCheck": "色は重複できません",
+      "titleRequiredCheck": "タイトルを入力してください",
+      "actRequiredCheck": "行動を選択してください",
+      "actDuplicateCheck": "行動内容は重複できません"
+    }
+  },
+  "tracking": {
+    "challengeHabit": "チャレンジする習慣 :",
+    "selectionHabitPH": "習慣を選択",
+    "detail": "詳細内容 : ",
+    "timer": "タイマー",
+    "countDown": "カウントダウン",
+    "countUp": "カウントアップ",
+    "timeMinutes": "時間（分）",
+    "log": "記録",
+    "reset": "リセット",
+    "pause": "一時停止",
+    "start": "スタート",
+    "logList": {
+      "title": "ログ一覧",
+      "headers": {
+        "date": "日時",
+        "isAchieved": "目標達成",
+        "executionTime": "実施時間（分:秒）"
+      }
+    },
+    "dialog": {
+      "header": "目標時間を達成できていません",
+      "message": "目標時間を達成できていませんが、記録しますか？",
+      "cancelButton": "キャンセル",
+      "registerButton": "記録"
+    },
+    "myToast": {
+      "summarySuccess": "成功通知",
+      "successMsg": "データの登録に成功しました",
+      "inputError": "入力エラー",
+      "inputErrorMsg": "入力内容を確認してください。",
+      "summaryFailure": "エラー通知",
+      "dataGetFailureMsg": "登録データの取得に失敗しました",
+      "failureMsg": "データの登録に失敗しました。もう一度お試しください。",
+      "requiredErrorMsg": "必須項目を確認してください。"
+    }
+  },
+  "mySpinnerMsg": {
+    "loading": "データ読み込み中...",
+    "registering": "データ登録中..."
+  }
+}

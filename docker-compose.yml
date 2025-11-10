@@ -1,0 +1,72 @@
+services:
+  # Laravel バックエンドサービス
+  app:
+    build:
+      # Dockerfileのあるディレクトリ（backendフォルダ）
+      context: ./backend
+      # 使用する Dockerfile のファイル名
+      dockerfile: Dockerfile
+    container_name: chronixis_app
+    ports:
+      # ホストの8000番ポートをコンテナの8000番ポートに割り当て
+      - "8000:8000"
+    volumes:
+      # ホストのbackendフォルダをコンテナ内の作業ディレクトリにマウント
+      - ./backend:/var/www/html
+    # コンテナ内での作業ディレクトリ指定
+    working_dir: /var/www/html
+    # Laravel開発サーバを起動
+    command: php artisan serve --host=0.0.0.0 --port=8000
+
+  # Vue.js フロントエンドサービス
+  frontend:
+    build:
+      # Dockerfileのあるディレクトリ（frontendフォルダ）
+      context: ./frontend
+    container_name: chronixis_frontend
+    ports:
+      # ホストの5173番ポートをコンテナの5173番ポートに割り当て（Vue開発サーバ）
+      - "5173:5173"
+    volumes:
+      # ホストのfrontendフォルダをコンテナ内/appにマウント
+      - ./frontend:/app
+    # コンテナ内での作業ディレクトリ指定
+    working_dir: /app
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    # Vueの開発サーバを起動
+    command: npm run dev -- --host 0.0.0.0
+
+  # MySQL データベースサービス
+  mysql:
+    image: mysql:8.0
+    container_name: chronixis_db
+    restart: always
+    environment:
+      TZ: Asia/Tokyo                             
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}    # ルートユーザーのパスワード
+      MYSQL_DATABASE: ${DB_DATABASE}                 # 作成する初期データベース名
+      MYSQL_USER: ${MYSQL_USER}                      # アプリ用のMySQLユーザー名
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}              # 上記ユーザーのパスワード
+    ports:
+      - "3306:3306"                      # MySQLの標準ポートを開放
+    volumes:
+      - mysql_data:/var/lib/mysql        # ローカルのmysql_dataを使う
+
+  # phpMyAdminサービス
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: chronixis_phpmyadmin
+    restart: always
+    depends_on:
+      - mysql
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_USER: ${PMA_USER}                     # MySQLユーザ名（上記mysqlのMYSQL_USERと合わせる）
+      PMA_PASSWORD: ${PMA_PASSWORD}             # MySQLパスワード（上記mysqlのMYSQL_PASSWORDと合わせる）
+  
+volumes:
+  mysql_data:
